@@ -18,6 +18,8 @@ spec:
         operator: Equal
         value: value
         effect: NoSchedule
+      nodeSelector:
+        your-node-label: env=development
       containers:
         - name: "troubleshooting-app"
           image: cepgbaseacr.azurecr.io/troubleshooting:latest
